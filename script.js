@@ -33,7 +33,7 @@ There was some error:
 1. I called the function to get random computer choice twice, that's why my results don't correspond. 
 2. It always return the else as result, prob cuz at const computerSelection there I put console.log there... 
 */
-const playerSelection = prompt();
+const playerSelection = prompt("Rock, paper or scissors?").toLowerCase();
 const computerSelection = getComputerChoice();
 console.log(`Computer choice is: ${computerSelection}`);
 console.log(playRound(playerSelection, computerSelection));
